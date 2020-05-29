@@ -1,0 +1,58 @@
+{
+  "welcomeFile": "/index.html",
+  "routes": [
+    {
+      "path": "/resources",
+      "target": {
+        "type": "service",
+        "name": "sapui5",
+        "entryPath": "/resources"
+      },
+      "description": "SAPUI5 Resources"
+    },
+    {
+      "path": "/test-resources",
+      "target": {
+        "type": "service",
+        "name": "sapui5",
+        "entryPath": "/test-resources"
+      },
+      "description": "SAPUI5 Resources"
+    },
+    {
+      "path": "/resources",
+      "target": {
+        "type": "service",
+        "name": "sapui5",
+        "entryPath": "/resources"
+      },
+      "description": "SAPUI5 Resources"
+    },
+    {
+      "path": "/test-resources",
+      "target": {
+        "type": "service",
+        "name": "sapui5",
+        "entryPath": "/test-resources"
+      },
+      "description": "SAPUI5 Test Resources"
+    },
+    {
+      "path": "/ED1-LB",
+      "target": {
+        "type": "destination",
+        "name": "ED1-LB"
+      },
+      "description": "ED1-LB"
+    },
+    {
+      "path": "/ED1-Master",
+      "target": {
+        "type": "destination",
+        "name": "ED1-Master"
+      },
+      "description": "ED1-Master"
+    }
+  ],
+  "sendWelcomeFileRedirect": true
+}

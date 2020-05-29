@@ -1,0 +1,60 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="EMP_CRUD.EMP_CRUD.controller.View1" displayBlock="true">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page xmlns:cd="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" id="page" title="{i18n>title}" cd:w5g.dt.context="/EMP">
+					<content>
+						<Table noDataText="Can't read data" id="table0" items="{/EMP}" sticky="ColumnHeaders" growingThreshold="10" includeItemInSelection="true" growing="true" delete="onDelete">
+							<items>
+								<ColumnListItem type="Active" id="item0">
+									<cells>
+										<Text text="{EMPLOYEE_ID}" id="text3"/>
+										<Text text="{EMP_NAME}" id="text4"/>
+										<Text text="{COMMENT}" id="text5"/></cells>
+								</ColumnListItem>
+							</items>
+							<columns>
+								<Column id="column0">
+									<header>
+										<Label text="Employee ID" id="label0"/>
+									</header>
+								</Column>
+								<Column id="column1">
+									<header>
+										<Label text="Employee Name" id="label1"/>
+									</header>
+								</Column>
+								<Column id="column2">
+									<header>
+										<Label text="Comments" id="label2"/>
+									</header>
+								</Column>
+							</columns>
+						</Table>
+						<Panel xmlns="sap.m" expandable="true" expanded="true" id="panel0">
+							<headerToolbar>
+								<Toolbar id="toolbar1">
+									<Title text="Input"/>
+									<ToolbarSpacer/>
+									<content>
+										<Button xmlns="sap.m" text="New" id="button0" press="onSave" icon="sap-icon://add"/>
+										<Button xmlns="sap.m" text="Update" id="button1" press="onUpdate" icon="sap-icon://save"/>
+									<Button xmlns="sap.m" text="Delete" id="button2" press="onDelete" icon="sap-icon://sys-minus"/>
+									</content>
+								</Toolbar>
+							</headerToolbar>
+							<content>
+								<Text text="Employee ID" id="text0"/>
+								<Input xmlns="sap.m" id="input0"/>
+								<Text text="Employee Name" id="text1"/>
+								<Input xmlns="sap.m" id="input1"/>
+								<Text text="Comments" id="text2"/>
+								<Input xmlns="sap.m" id="input2"/>
+							</content>
+						</Panel>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>

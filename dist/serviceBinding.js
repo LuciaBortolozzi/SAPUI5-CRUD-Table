@@ -1,0 +1,1 @@
+function initModel(){var a="/ED1-Master/ACN_Analytics/Finance/CustomReporting/11602672/srv_emp_crud/srv.xsodata/";var e=new sap.ui.model.odata.ODataModel(a,true);sap.ui.getCore().setModel(e)}
